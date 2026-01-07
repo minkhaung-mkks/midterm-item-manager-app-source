@@ -41,6 +41,12 @@ function ItemManager() {
       setErrorMsg("Please select a category");
       return false;
     }
+    // I was going to add a price must be greater than 0 error message here but I thought 0 could be used for
+    // free / gift items so I left that out, but I will supply the code just in case you want that too.
+    // if (itemPrice == 0 ) {
+    //   setErrorMsg("Price must not be 0");
+    //   return false;
+    // }
     if (itemPrice < 0 || itemPrice == null || itemPrice =='') {
       setErrorMsg("Price must not be less than 0");
       return false;
@@ -126,7 +132,7 @@ function ItemManager() {
             ))}
             <tr>
               <td>
-                <span>{currentId.current + 1}</span>
+                <span></span>
               </td>
               <td>
                 <input type="text" ref={itemName} className="name-input" />
