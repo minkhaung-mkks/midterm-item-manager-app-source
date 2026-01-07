@@ -53,3 +53,7 @@
 input, select{
   padding: 5px;
 }
+
+.name-input{
+  width: 20vw;
+}

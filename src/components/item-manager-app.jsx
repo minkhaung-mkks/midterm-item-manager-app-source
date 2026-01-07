@@ -129,7 +129,7 @@ function ItemManager() {
                 <span>{currentId.current + 1}</span>
               </td>
               <td>
-                <input type="text" ref={itemName} />
+                <input type="text" ref={itemName} className="name-input" />
               </td>
               <td>
                 <select name="" id="" ref={itemCategory}>
