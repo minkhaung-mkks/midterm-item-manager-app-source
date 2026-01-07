@@ -129,7 +129,7 @@ function ItemManager() {
                   <span>{item.itemPrice}</span>
                 </td>
                 <td>
-                  <button className="del-btn" onClick={() => handleDelete(index)}>
+                  <button className="del-btn" type="button" onClick={() => handleDelete(index)}>
                     <img src={deleteLogo} alt="" />
                   </button>
                 </td>
