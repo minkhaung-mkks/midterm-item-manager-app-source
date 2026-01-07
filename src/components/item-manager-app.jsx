@@ -91,6 +91,11 @@ function ItemManager() {
   return (
     <>
       <div id="h1">Item Management</div>
+      <form  id="add-item-form"
+  onSubmit={(e) => {
+    e.preventDefault();
+    handleAddItem();
+  }}/>
       <div id="data-area">
         <table id="item-table" className="item-table">
           <thead>
@@ -135,20 +140,20 @@ function ItemManager() {
                 <span></span>
               </td>
               <td>
-                <input type="text" ref={itemName} className="name-input" />
+                <input type="text" ref={itemName} className="name-input" form="add-item-form" />
               </td>
               <td>
-                <select name="" id="" ref={itemCategory}>
+                <select name="" id="" ref={itemCategory} form="add-item-form">
                   <option value="Stationary">Stationary</option>
                   <option value="Kitchenware">Kitchenware</option>
                   <option value="Appliance">Appliance</option>
                 </select>
               </td>
               <td>
-                <input type="number" ref={itemPrice} min="0" />
+                <input type="number" ref={itemPrice} min="0" form="add-item-form"/>
               </td>
               <td>
-                <button className="add-btn" onClick={handleAddItem} type="button">
+                <button className="add-btn"   type="submit" form="add-item-form">
                   Add item
                 </button>
               </td>
