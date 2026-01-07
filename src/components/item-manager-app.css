@@ -1,0 +1,55 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 20px; /* Header alignment */
+}
+
+#data-area{
+  margin-top: 20px;
+}
+/* Table basic style */
+.item-table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100vw;
+  table-layout: fixed; /* makes widths obey your rules */
+}
+#col-item-id{
+  width: 10%;
+}
+#col-item-name{
+  width: 40%;
+}
+
+.item-table th,
+.item-table td {
+  border-bottom: 1px solid black;
+}
+
+/* Header */
+#h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+
+#error-message-text{
+  color: red;
+}
+.del-btn{
+  background-color: transparent;
+  border: none;
+}
+.del-btn img{
+  background-color: none;
+}
+
+.add-btn{
+  background-color: rgb(0, 140, 255);
+  color: white;
+  border-radius: 5px;
+  padding: 8px;
+}
+input, select{
+  padding: 5px;
+}
