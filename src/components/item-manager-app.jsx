@@ -150,7 +150,7 @@ function ItemManager() {
                 </select>
               </td>
               <td>
-                <input type="number" ref={itemPrice} min="0" form="add-item-form"/>
+                <input type="number" ref={itemPrice} min="0" step="0.01" form="add-item-form"/>
               </td>
               <td>
                 <button className="add-btn"   type="submit" form="add-item-form">
